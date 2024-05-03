@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 style="text-align: center;font-size: 21px">{{title}}</h1>
+  <input type="text" #name class="edit" placeholder="Enter your Name" name="Name"><br>
+  <input type="text" #address class="edit" placeholder="Enter your Address" name="Address"><br>
+  <input type="text" #contact class="edit" placeholder="Enter your contact" name="Contact"><br>
+  <input type="email" #email class="edit" placeholder="Enter your Email" name="Email"><br>
+  <input type="password" #password class="edit" placeholder="Enter your password" name="Password"><br>
+  <button class="butt" (click)="getValue(name.value,address.value,contact.value,email.value)">Register</button>
+
+  <h1 style="text-align: center;font-size: 21px;">Your Registered data</h1>
+  <p style="margin-bottom: 5px;">Name: {{displayName}}</p>
+  <p style="margin-bottom: 5px;">Address: {{displayAddress}}</p>
+  <p style="margin-bottom: 5px;">Contact: {{displayContact}}</p>
+  <p style="margin-bottom: 5px;">Email: {{displayEmail}}</p>
+</div>
+
+ 

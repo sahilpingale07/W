@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopStop</title>
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      #cont1{
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-image: url("./travel.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position:center;
+        opacity: 0.9;
+      }
+      #img1 {
+        margin:0;
+        height: 30%;
+        width: 100%;
+      }
+      .nv > li{
+        font-size: 14px;
+        color: azure;
+      }
+      .foot{
+        margin: 0;
+        padding: 10px;
+        background-color: rgb(187, 181, 174);
+        text-align: center;
+        color: rgb(32, 30, 30);
+        height: 30px;
+        font-weight: 600;
+        font-size: 18px;
+        border: none;
+        text-shadow: none;
+      }
+      .se1{
+        width: 60vw; 
+        padding: 30px;
+        margin: 0 auto;
+      }
+      .head{
+        margin-top: 40px;
+        width: 60vw;
+      }
+      .head > h1{
+        font-size: 42px;
+        font-weight: 800;
+        font-family:  'Arial', sans-serif;
+        color: rgb(22, 21, 21);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: none;
+      }
+      .head > p{
+        display: block;
+        color: rgb(41, 39, 39);
+        font-size: 20px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: none;
+      }
+      @media(max-width: 500px){
+        .head > h1{
+          font-size: 24px;
+        }
+        .foot{
+          font-size: 15px;
+        }
+        #cont1{
+          max-height: 80vh;
+          max-width: 50vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div data-role="page" id="main">
+      <div data-role="header" data-theme="b" style="background-color:rgb(30, 19, 3);padding: 0; margin: 0;">
+        <h1 style="text-align: left;font-size: 24px;margin: 0;padding-left: 30px; text-decoration: underline;font-family: Georgia, 'Times New Roman', Times, serif;">JourneyMates</h1>
+      </div>
+      <div data-role="navbar" data-grid="c" class="nv">
+        <ul>
+          <li><a href="#main" class="ui-btn-active" style="background-color:  rgb(141, 88, 14);"> Home </a></li>
+          <li><a href="#" class="ui-btn-active" style="background-color: rgb(141, 88, 14);">About us</a></li>
+          <li><a href="#products" class="ui-btn-active" style="background-color:  rgb(141, 88, 14);">Tours</a></li>
+          <li>
+            <a href="./login.html" class="ui-btn-active" style="background-color: rgb(141, 88, 14);">Login/Register</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div data-role="content" id="cont1">
+        <center><div class="head">
+          <h1>Time to Travel</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit unde ex amet quidem perspiciatis iure incidunt soluta, cum autem!</p>
+        </div>
+      </center>
+        <div class="se1">
+          <input type="search" name="password" id="search" value="" placeholder="explore destinations">
+        </div>
+      </div>
+      <div class="footer" style="background-color: black;">
+        <center><h2 style="background-color: rgb(187, 181, 174);text-shadow: none; color:rgb(31, 30, 30);font-size: 25px; padding: 10px;font-weight: 600;">Popular destinations</h2></center>
+        <div class="ui-grid-b">
+          <div class="ui-block-a"><div class="ui-bar ui-bar-a foot">Mumbai</div></div>
+          <div class="ui-block-b"><div class="ui-bar ui-bar-a foot">Goa</div></div>
+          <div class="ui-block-c"><div class="ui-bar ui-bar-a foot">Kashmir</div></div>
+          <div class="ui-block-a"><div class="ui-bar ui-bar-a foot">Kerala</div></div>
+          <div class="ui-block-b"><div class="ui-bar ui-bar-a foot">Hampi</div></div>
+          <div class="ui-block-c"><div class="ui-bar ui-bar-a foot">Ladakh</div></div>
+          <div class="ui-block-a"><div class="ui-bar ui-bar-a foot">Tamilnadu</div></div>
+          <div class="ui-block-b"><div class="ui-bar ui-bar-a foot">Kokan</div></div>
+          <div class="ui-block-c"><div class="ui-bar ui-bar-a foot">Rajasthan</div></div>
+      </div><!-- /grid-c -->
+        <center><h2 style="background-color: rgb(11, 12, 12); color: rgb(243, 237, 237);font-size: 22px;padding: 10px;">All Rights Are Reserved &copy</h2></center>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+        body{
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left top,rgb(132, 183, 220),rgb(234, 236, 237));
+        }
+        #div1{
+            width: 30vw;
+            height: fit-content;
+            margin: 10px auto;
+            background-color: rgb(236, 241, 241);
+            border:1px solid rgb(153, 147, 147);
+            box-shadow: 10px 9px 10px rgb(113, 110, 110);
+            overflow: auto;
+            border-radius: 5px;
+            position: static;
+        }
+        #imgt{
+            display: block;
+            margin: 12px auto;
+            padding: 0;
+            width: 95%;
+            height: 20%;
+            box-shadow: 2px 2px 2px rgb(95, 92, 88);
+            border-radius: 5px;
+        }
+        article{
+            margin-top: 0px;
+            font-weight: 200;
+            padding: 20px;
+            padding-top: 0px;
+            text-align: justify;
+            font-family: 'Cormorant', serif;
+            color: rgb(23, 24, 24);
+            font-size: 18px;
+        }
+        p{
+            width: 90%;
+            height: 50%;
+            color: rgb(64, 60, 60);
+            text-align: left;
+            font-weight: 600;
+            font-size: 23px;
+            margin: 0px auto;
+            padding: 10px;
+            padding-top: 3px;
+            padding-bottom: 5px;
+            position: relative;
+        }
+        #div3{
+            display: block;
+            margin: 10px auto;
+            padding: 0px;
+            text-align: center;
+        }
+        button{
+            border: 2px solid rgb(119, 215, 241);
+            border-radius: 15px;
+            padding: 7px;
+            font-weight: 600;
+            color: rgb(18, 95, 229);
+            background-color: rgb(212, 239, 248);
+        }
+        button:hover{
+            background-color: rgb(70, 139, 214);
+            color: rgb(235, 237, 240);
+            border: 2px solid rgb(48, 48, 220);
+        }
+        #div2{
+            height:50%;
+           display: block;
+           margin: 2px auto;
+           padding: 3px;
+           text-align: left;
+           position: relative;
+        }
+       
+        a{  
+            width:50px;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            border: 1px solid rgb(26, 25, 25);
+            padding: 7px;
+            background-color: rgb(154, 160, 160);
+            border-radius: 18px;
+            margin: 10px;
+            font-family: 'Cormorant', serif;
+            font-weight: 590;
+            color: rgb(244, 241, 241);
+            box-shadow: 3px 4px 8px rgb(197, 197, 194);
+            position: relative;
+        }
+        a:hover{
+            background-color: rgb(78, 81, 81);
+            font-weight: 600;
+            padding: 8px;
+        }
+        #extraText{
+            margin-top: 0px;
+            font-weight: 200;
+            padding: 20px;
+            padding-top: 0px;
+            text-align: justify;
+            font-family: 'Cormorant', serif;
+            color: rgb(23, 24, 24);
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <img src="travel.jpg" alt="pic" id="imgt">
+        <div id="div2">
+                <a href="https://www.tourmyindia.com/">Places</a>
+                <a href="https://www.holidify.com/collections/tourist-places-in-india/">Tour</a>
+
+        </div>
+        <p>Explore India</p>
+        <article>
+            "India, a kaleidoscope of culture and landscapes, beckons travelers with its diverse attractions. From the iconic Taj Mahal, a testament to eternal love, to the spiritual serenity of Varanasi's ghats, the country offers a rich tapestry of experiences. Explore vibrant markets, savor diverse cuisines, and embark on wildlife safaris in national parks. India's heritage sites, such as Jaipur's palaces and Kerala's backwaters, showcase its historical and natural wonders. With a warm hospitality that reflects its motto of "Atithi Devo Bhava" (The guest is God), India stands as a captivating destination for globetrotters seeking adventure and enlightenment."
+        </article>
+        <div id="div3">
+            <button onclick="toggleText()">Read more</button>
+            <p id="extraText" style="display: none;">India, the seventh-largest country by land area, has something for everyone. Whether you're drawn to its ancient temples, bustling cities, or serene beaches, India promises a memorable journey. Don't miss the chance to immerse yourself in its vibrant culture and rich history.</p>
+        </div>
+    </div>
+    <script>
+        function toggleText() {
+            var extraText = document.getElementById("extraText");
+            if (extraText.style.display === "none") {
+                extraText.style.display = "block";
+            } else {
+                extraText.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
